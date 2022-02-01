@@ -18,6 +18,7 @@ public class Script_Weapon : MonoBehaviour
     {
         if (m_Enabled)
         {
+            transform.rotation = Camera.main.transform.rotation;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit,1000, LayerMask.GetMask("Enemy") | LayerMask.GetMask("Terrain") | LayerMask.GetMask("Default"), QueryTriggerInteraction.Collide))

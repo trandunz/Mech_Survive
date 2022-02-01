@@ -5,11 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - WeaponMaster
+  - Bullet
+  - Enemy
+  - Projectile_LaserBolt
+  - FPSCam
+  - 3RDCam
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Terrain
   - Water
   - UI
   - 

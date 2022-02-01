@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310350194123212972}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310694079034565704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Camera001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307539149004241422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307858376903543944}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307487221400867520}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArm22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307644206432466894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmPalm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310331608816158244}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310760755947046644}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310315873855562662}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmPalm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307984569099183868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307651946549467350}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8307821468865438606}
   - component: {fileID: 8268030795479770700}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rifle04_Magazine_Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,9 +442,9 @@ GameObject:
   - component: {fileID: 8307525223277686406}
   - component: {fileID: 8216938362198955400}
   - component: {fileID: 8815337853544491350}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hands_Automatic_rifle04
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -517,7 +517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8307814036508291576}
   - component: {fileID: 8265167792562029280}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Glove_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -635,7 +635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307753627866170536}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001Hub001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,7 +667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307843654067771592}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArm22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310499065981021934}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArm1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -729,7 +729,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307525114644681436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -760,7 +760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307833021390244900}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmIKTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -790,7 +790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310443151988415454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -821,7 +821,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307780596089098252}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmIKTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -851,7 +851,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310684479984042800}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,7 +881,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307920636084332592}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hp_Rifle04_Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -913,7 +913,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307478345958520474}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: B_Rifle04_Deatail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -943,7 +943,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310545715726986574}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: B_Rifle04_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -973,7 +973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307458609788216356}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmCollarbone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1005,7 +1005,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8310625461071192834}
   - component: {fileID: 8264955908383253714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arm_mesh001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1097,7 +1097,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310626161041251686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hp_Rifle04_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1130,7 +1130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310459437711948438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hp_Rifle04_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1162,7 +1162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8310685352140881280}
   - component: {fileID: 8264723841544589302}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rifle04_Detail_Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1246,7 +1246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307527759713208596}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hp_Rifle04_Bulet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1277,7 +1277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310436619188043960}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1307,7 +1307,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310799569104111358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmCollarbone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1338,7 +1338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307861594248005942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: B_Rifle04_Bulets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1368,7 +1368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307509045188822872}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArm21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1399,7 +1399,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310806924255529824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: B_Rifle04_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1430,7 +1430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8310827070560175582}
   - component: {fileID: 8265124868833781788}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rifle04_Body_Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1517,7 +1517,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307952214713336472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1548,7 +1548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310381149520139822}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1578,7 +1578,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310784411278840394}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: B_Rifle04_Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1608,7 +1608,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310694615645877560}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1639,7 +1639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310276530728082424}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1670,7 +1670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310367861017064524}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArm1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1701,7 +1701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307521596962862120}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1732,7 +1732,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310273846516719162}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1763,7 +1763,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310741634885588244}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1794,7 +1794,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307767691193103886}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1824,7 +1824,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307987624729772866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hp_Rifle04_Detail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1855,7 +1855,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307796610681874800}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1885,7 +1885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307457022417557648}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1919,7 +1919,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310269674612852940}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1950,7 +1950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310319409896473360}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1980,7 +1980,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307548969702653224}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArm21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2011,7 +2011,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307990343014295068}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2042,7 +2042,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307656986492718904}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2073,7 +2073,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310655619514627716}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Group_arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2105,7 +2105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307482311286270760}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2135,7 +2135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310414545942089098}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2166,7 +2166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310285687189667128}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2197,7 +2197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307598376708281816}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2228,7 +2228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8307552331972370502}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2259,7 +2259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8310507772337266126}
   - component: {fileID: 8264758484484849634}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rifle04_Trigger_Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2343,7 +2343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310721613249020372}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001RArmDigit21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2374,7 +2374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310524216855588508}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character001LArmDigit41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2405,7 +2405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8389232348052704035}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

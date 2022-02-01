@@ -29,10 +29,10 @@ public class Script_Player : MonoBehaviour
         m_Controller = GetComponent<CharacterController>();
         m_Camera = Camera.main.transform;
         m_HoldsteredWeapons = new List<GameObject>();
+        m_HoldsteredWeapons.Add(Instantiate(m_WeaponMaster.Weapons[3].gameObject, m_WeaponHolster));
+        m_HoldsteredWeapons.Add(Instantiate(m_WeaponMaster.Weapons[2].gameObject, m_WeaponHolster));
         m_HoldsteredWeapons.Add(Instantiate(m_WeaponMaster.Weapons[1].gameObject, m_WeaponHolster));
         m_HoldsteredWeapons.Add(Instantiate(m_WeaponMaster.Weapons[0].gameObject, m_WeaponHolster));
-        m_HoldsteredWeapons.Add(Instantiate(m_WeaponMaster.Weapons[2].gameObject, m_WeaponHolster));
-        m_HoldsteredWeapons.Add(Instantiate(m_WeaponMaster.Weapons[3].gameObject, m_WeaponHolster));
         HandleActiveWeapon();
     }
     void Update()

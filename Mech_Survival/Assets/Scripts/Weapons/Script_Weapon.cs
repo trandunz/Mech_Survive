@@ -20,9 +20,10 @@ public class Script_Weapon : MonoBehaviour
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit,1000, LayerMask.GetMask("Enemy") | LayerMask.GetMask("Terrain") | LayerMask.GetMask("Default"), QueryTriggerInteraction.Collide))
             {
                 m_Muzzle.LookAt(hit.point);
+
             }
             if (Input.GetMouseButton(0))
             {

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1073275651}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 17813371875344768}
   - component: {fileID: 17813371875344893}
   - component: {fileID: 17813371875344769}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -130,6 +130,8 @@ MonoBehaviour:
   m_TurnSpeed: 0.1
   m_MovementSpeed: 10
   m_WeaponHolster: {fileID: 2887943804194584786}
+  m_FPSCam: {fileID: 0}
+  m_ThirdPersonCam: {fileID: 0}
 --- !u!143 &17813371875344769
 CharacterController:
   m_ObjectHideFlags: 0
@@ -157,7 +159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2887943804194584786}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Holster
   m_TagString: Untagged
   m_Icon: {fileID: 0}

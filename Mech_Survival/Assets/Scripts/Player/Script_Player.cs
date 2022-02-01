@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class Script_Player : MonoBehaviour
 {
+    #region Public
+    public string GamerTag = "Human";
+    #endregion
     #region Serialized
     [SerializeField] float m_TurnSpeed = 0.1f,
                            m_MovementSpeed = 10.0f;
@@ -12,6 +15,7 @@ public class Script_Player : MonoBehaviour
     #endregion
 
     #region Private
+    bool m_IsEnabled = true;
     bool m_FirstPerson = true;
     Script_WeaponMaster m_WeaponMaster;
     int m_ActiveSlotID = 0;
@@ -20,6 +24,18 @@ public class Script_Player : MonoBehaviour
     Transform m_Camera;
     CharacterController m_Controller;
     float m_TurnSmoothVelocity;
+    public void SetFunctionallityEnabled(bool _value)
+    {
+        m_IsEnabled = _value;
+    }
+    public void ToggleFunctionallity()
+    {
+        m_IsEnabled = !m_IsEnabled;
+    }
+    public List<GameObject> GetAllWeapons()
+    {
+        return m_HoldsteredWeapons;
+    }
     void Start()
     {
         m_FPSCam = GameObject.FindGameObjectWithTag("FPSCam").GetComponent<Cinemachine.CinemachineVirtualCamera>();
@@ -37,21 +53,23 @@ public class Script_Player : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (m_IsEnabled)
         {
-            m_FirstPerson = !m_FirstPerson;
-            HandleCameraState();
-        }
-        
-        m_OldSlotID = m_ActiveSlotID;
-        HandleMovement();
-        HandleWeaponSwitching();
-        if (m_OldSlotID != m_ActiveSlotID)
-        {
-            Debug.Log("Handled Weapon Nosense");
-            HandleActiveWeapon();
-        }
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                m_FirstPerson = !m_FirstPerson;
+                HandleCameraState();
+            }
 
+            m_OldSlotID = m_ActiveSlotID;
+            HandleMovement();
+            HandleWeaponSwitching();
+            if (m_OldSlotID != m_ActiveSlotID)
+            {
+                Debug.Log("Handled Weapon Nosense");
+                HandleActiveWeapon();
+            }
+        }
     }
 
     Script_Weapon GrabCurrentWeapon()

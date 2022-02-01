@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Script_Weapon : MonoBehaviour
 {
+    public Sprite HotBarIcon;
     [SerializeField] GameObject m_Bullet;
     [SerializeField] Transform m_Muzzle;
     [SerializeField] float m_FireRate = 0.5f;

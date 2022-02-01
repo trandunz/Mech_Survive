@@ -1756,6 +1756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e8ccf8a8136ea43a3b18ec8fe1d094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HotBarIcon: {fileID: 21300000, guid: 3e7e4c5082f34e64fad5eb4cecccf32d, type: 3}
   m_Bullet: {fileID: 8880326760115931767, guid: 1cb95431285f55741bfe399fee9de303, type: 3}
   m_Muzzle: {fileID: 4688418513228483521}
   m_FireRate: 0.5

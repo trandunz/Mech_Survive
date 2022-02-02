@@ -16,6 +16,7 @@ public class Script_Weapon : MonoBehaviour
     int m_BulletDamage;
     bool m_Enabled = true;
     bool m_Interacting = false;
+
     Ray ray;
     RaycastHit hit;
     public ParticleSystem GetMuzzleFlash()
@@ -73,6 +74,7 @@ public class Script_Weapon : MonoBehaviour
     }
     void HandleRecoil()
     {
+        // Gun Rotation
         m_Recoil.RecoilFire();
         ray.direction = m_Recoil.rotation * ray.direction;
     }

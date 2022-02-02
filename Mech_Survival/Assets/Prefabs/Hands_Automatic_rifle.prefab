@@ -695,7 +695,7 @@ MonoBehaviour:
   HotBarIcon: {fileID: 21300000, guid: 3baa091eef77bee4c9355286a3a62f11, type: 3}
   m_Bullet: {fileID: 8880326760115931767, guid: 1cb95431285f55741bfe399fee9de303, type: 3}
   m_Muzzle: {fileID: 5848154125536565347}
-  m_FireRate: 0.3
+  m_FireRate: 0.101
 --- !u!114 &-4998908878554737512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,11 +708,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72987fdf3839fb24c96f2f28d06790da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RecoilX: 0
-  m_RecoilY: 0
-  m_RecoilZ: 0
-  m_Smoothing: 0
-  m_ReturnSpeed: 0
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+  m_RecoilX: 2
+  m_RecoilY: 2
+  m_RecoilZ: 2
+  m_Smoothing: 1
+  m_ReturnSpeed: 3
 --- !u!1 &1340378287680669399
 GameObject:
   m_ObjectHideFlags: 0

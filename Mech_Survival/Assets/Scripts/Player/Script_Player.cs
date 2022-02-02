@@ -4,18 +4,20 @@ using UnityEngine;
 public class Script_Player : MonoBehaviour
 {
     #region Public
+    public Cinemachine.CinemachineVirtualCamera m_FPSCam;
     public string GamerTag = "Human";
     #endregion
+
     #region Serialized
     [SerializeField] float m_TurnSpeed = 0.1f,
                            m_MovementSpeed = 10.0f;
     [SerializeField] Transform m_WeaponHolster;
-    public Cinemachine.CinemachineVirtualCamera m_FPSCam;
+    [SerializeField] float m_InteractRange = 3.0f;
     [SerializeField] Cinemachine.CinemachineVirtualCamera m_ThirdPersonCam;
     #endregion
 
     #region Private
-    bool m_IsEnabled = true;
+    [SerializeField] bool m_IsEnabled = true;
     bool m_FirstPerson = true;
     Script_WeaponMaster m_WeaponMaster;
     int m_ActiveSlotID = 0;
@@ -24,6 +26,8 @@ public class Script_Player : MonoBehaviour
     Transform m_Camera;
     CharacterController m_Controller;
     float m_TurnSmoothVelocity;
+    Ray InteractRay;
+    RaycastHit InteractHit;
     public void SetFunctionallityEnabled(bool _value)
     {
         m_IsEnabled = _value;
@@ -53,6 +57,9 @@ public class Script_Player : MonoBehaviour
     }
     void Update()
     {
+        float m_mouseYTotal = 0.0f;
+        m_mouseYTotal = Input.mousePosition.y;
+        m_FPSCam.transform.rotation = Quaternion.Euler(0.0f, 1.0f * 20.0f * Time.deltaTime, 0.0f);
         if (m_IsEnabled)
         {
             if (Input.GetKeyDown(KeyCode.Tab))
@@ -69,6 +76,7 @@ public class Script_Player : MonoBehaviour
                 Debug.Log("Handled Weapon Nosense");
                 HandleActiveWeapon();
             }
+            HandleInteract();
         }
     }
 
@@ -132,6 +140,20 @@ public class Script_Player : MonoBehaviour
         if ((m_HoldsteredWeapons.Count - 1) >= m_ActiveSlotID)
         {
             m_HoldsteredWeapons[m_ActiveSlotID].GetComponent<Script_Weapon>().Enable();
+        }
+    }
+    void HandleInteract()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            InteractRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(InteractRay, out InteractHit, m_InteractRange, LayerMask.GetMask("Enemy") | LayerMask.GetMask("Terrain") | LayerMask.GetMask("Default"), QueryTriggerInteraction.Collide))
+            {
+                if (InteractHit.transform.gameObject.tag is "Chest")
+                {
+                    InteractHit.transform.GetComponentInParent<Script_Chest>().Interact();
+                }
+            }
         }
     }
     #endregion

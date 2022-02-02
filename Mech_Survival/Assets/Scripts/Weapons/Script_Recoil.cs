@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class Script_Recoil : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Script_Recoil : MonoBehaviour
 
     [SerializeField] float m_Smoothing;
     [SerializeField] float m_ReturnSpeed;
+
+
     // Start is called before the first frame update
     void Start()
     {

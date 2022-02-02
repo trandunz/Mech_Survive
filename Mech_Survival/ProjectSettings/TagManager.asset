@@ -10,6 +10,7 @@ TagManager:
   - Projectile_LaserBolt
   - FPSCam
   - 3RDCam
+  - Chest
   layers:
   - Default
   - TransparentFX

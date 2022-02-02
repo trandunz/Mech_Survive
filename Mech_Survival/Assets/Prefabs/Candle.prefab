@@ -1695,6 +1695,7 @@ GameObject:
   - component: {fileID: 1583943241602215694}
   - component: {fileID: 1493737657489400928}
   - component: {fileID: 3542989046069470963}
+  - component: {fileID: -8099961986562655522}
   m_Layer: 6
   m_Name: Candle
   m_TagString: Player
@@ -1760,6 +1761,23 @@ MonoBehaviour:
   m_Bullet: {fileID: 8880326760115931767, guid: 1cb95431285f55741bfe399fee9de303, type: 3}
   m_Muzzle: {fileID: 4688418513228483521}
   m_FireRate: 0.5
+--- !u!114 &-8099961986562655522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580736754827170284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72987fdf3839fb24c96f2f28d06790da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RecoilX: 0
+  m_RecoilY: 0
+  m_RecoilZ: 0
+  m_Smoothing: 0
+  m_ReturnSpeed: 0
 --- !u!1 &1580744569290415646
 GameObject:
   m_ObjectHideFlags: 0

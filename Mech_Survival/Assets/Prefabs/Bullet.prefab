@@ -109,6 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98869fa464d0f8547bdbb17082ffc88c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_BulletImpact: {fileID: 6132199085485808748, guid: 939874274ccdb16408f285a58cde696e, type: 3}
   m_Damage: 50
   m_MoveVelocity: 100000
 --- !u!54 &-8984850885158381636

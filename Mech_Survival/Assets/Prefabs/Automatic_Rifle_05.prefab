@@ -2733,6 +2733,7 @@ GameObject:
   - component: {fileID: 1049864150439234736}
   - component: {fileID: 1140112548874642348}
   - component: {fileID: 1044961348955932571}
+  - component: {fileID: 2667330368435165462}
   m_Layer: 6
   m_Name: Automatic_Rifle_05
   m_TagString: Player
@@ -2803,10 +2804,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HotBarIcon: {fileID: 21300000, guid: 3baa091eef77bee4c9355286a3a62f11, type: 3}
-  m_ShotSound: {fileID: 8300000, guid: 9f19899624f198f4faedb12ee851b244, type: 3}
   m_Bullet: {fileID: 8880326760115931767, guid: 1cb95431285f55741bfe399fee9de303, type: 3}
   m_Muzzle: {fileID: 1044961347638711021}
   m_FireRate: 0.4
+--- !u!114 &2667330368435165462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046943377512148226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72987fdf3839fb24c96f2f28d06790da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RecoilX: 0
+  m_RecoilY: 0
+  m_RecoilZ: 0
+  m_Smoothing: 0
+  m_ReturnSpeed: 0
 --- !u!1001 &2020832915032991786
 PrefabInstance:
   m_ObjectHideFlags: 0

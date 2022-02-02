@@ -10,7 +10,7 @@ public class Script_Player : MonoBehaviour
     [SerializeField] float m_TurnSpeed = 0.1f,
                            m_MovementSpeed = 10.0f;
     [SerializeField] Transform m_WeaponHolster;
-    [SerializeField] Cinemachine.CinemachineVirtualCamera m_FPSCam;
+    public Cinemachine.CinemachineVirtualCamera m_FPSCam;
     [SerializeField] Cinemachine.CinemachineVirtualCamera m_ThirdPersonCam;
     #endregion
 

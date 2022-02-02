@@ -301,7 +301,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: -108694
+    surfaceParameter: 17984
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: -7959271442267038005
@@ -2675,7 +2675,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 17946
+    surfaceParameter: 17994
     meshQueryIndex: 2
     subMeshQueryIndex: 0
     geometryHashValue: -9006096958326795569
@@ -3180,7 +3180,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 17952
+    surfaceParameter: 17998
     meshQueryIndex: 0
     subMeshQueryIndex: 0
     geometryHashValue: -4709802839072234207
@@ -3293,7 +3293,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 17950
+    surfaceParameter: 17996
     meshQueryIndex: 6
     subMeshQueryIndex: 0
     geometryHashValue: -6885522991901195618
@@ -3572,8 +3572,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.160798, y: 0.5702887, z: -24.41}
+  m_LocalRotation: {x: 0.12261535, y: -0.00000002838439, z: -0.0000000035549972, w: 0.9924543}
+  m_LocalPosition: {x: -4.160798, y: 5.0892105, z: -42.405315}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4278,7 +4278,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 17946
+    surfaceParameter: 17994
     meshQueryIndex: 2
     subMeshQueryIndex: 0
     geometryHashValue: -9006096958326795569

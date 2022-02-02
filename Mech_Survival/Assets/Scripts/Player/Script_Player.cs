@@ -9,25 +9,35 @@ public class Script_Player : MonoBehaviour
     #endregion
 
     #region Serialized
-    [SerializeField] float m_TurnSpeed = 0.1f,
-                           m_MovementSpeed = 10.0f;
+    [SerializeField]
+    float 
+    m_TurnSpeed = 0.1f,
+    m_MovementSpeed = 10.0f,
+    m_GravityValue = -9.81f,
+    m_JumpHeight = 5.0f,
+    m_InteractRange = 3.0f,
+    m_RaycastGroundLength = 3.0f;
+
     [SerializeField] Transform m_WeaponHolster;
-    [SerializeField] float m_InteractRange = 3.0f;
     [SerializeField] Cinemachine.CinemachineVirtualCamera m_ThirdPersonCam;
+    [SerializeField] LayerMask GroundedLayer;
     #endregion
 
     #region Private
-    [SerializeField] bool m_IsEnabled = true;
-    bool m_FirstPerson = true;
-    Script_WeaponMaster m_WeaponMaster;
-    int m_ActiveSlotID = 0;
-    int m_OldSlotID = 0;
+    float m_YMove = 0.0f,
+          m_TurnSmoothVelocity = 0;
+    int m_OldSlotID = 0,
+        m_ActiveSlotID = 0;
+    bool m_IsEnabled = true,
+         m_Grounded = true,
+         m_FirstPerson = true;
     List<GameObject> m_HoldsteredWeapons;
     Transform m_Camera;
     CharacterController m_Controller;
-    float m_TurnSmoothVelocity;
     Ray InteractRay;
     RaycastHit InteractHit;
+    Script_WeaponMaster m_WeaponMaster;
+
     public void SetFunctionallityEnabled(bool _value)
     {
         m_IsEnabled = _value;
@@ -57,9 +67,6 @@ public class Script_Player : MonoBehaviour
     }
     void Update()
     {
-        float m_mouseYTotal = 0.0f;
-        m_mouseYTotal = Input.mousePosition.y;
-        m_FPSCam.transform.rotation = Quaternion.Euler(0.0f, 1.0f * 20.0f * Time.deltaTime, 0.0f);
         if (m_IsEnabled)
         {
             if (Input.GetKeyDown(KeyCode.Tab))
@@ -68,14 +75,10 @@ public class Script_Player : MonoBehaviour
                 HandleCameraState();
             }
 
-            m_OldSlotID = m_ActiveSlotID;
+            m_Grounded = (m_Controller.collisionFlags == CollisionFlags.CollidedBelow) ? true : m_Grounded;
             HandleMovement();
             HandleWeaponSwitching();
-            if (m_OldSlotID != m_ActiveSlotID)
-            {
-                Debug.Log("Handled Weapon Nosense");
-                HandleActiveWeapon();
-            }
+            HandleActiveWeapon();
             HandleInteract();
         }
     }
@@ -95,6 +98,8 @@ public class Script_Player : MonoBehaviour
             input.z -= 1;
         if (Input.GetKey(KeyCode.D))
             input.x += 1;
+        if (Input.GetKeyDown(KeyCode.Space))
+            input.y += 1;
         return input.normalized;
     }
     float GrabScroll()
@@ -114,32 +119,60 @@ public class Script_Player : MonoBehaviour
     }
     void HandleMovement()
     {
-        Vector3 direction = new Vector3(GrabInput().x, 0.0f, GrabInput().z);
+        RayCastIsGrounded();
+        Vector3 direction = new Vector3(GrabInput().x, 0, GrabInput().z);
         float targetAngle;
         targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + m_Camera.eulerAngles.y;
-
         float smoothedAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref m_TurnSmoothVelocity, m_TurnSpeed);
+        Vector3 movedir = Quaternion.Euler(0.0f, smoothedAngle, 0.0f) * Vector3.forward;
+        movedir.Normalize();
 
         transform.rotation = Quaternion.Euler(0.0f, smoothedAngle, 0.0f);
 
-        Vector3 movedir = Quaternion.Euler(0.0f, smoothedAngle, 0.0f) * Vector3.forward;
-
         if (direction.magnitude >= 0.1f)
-            m_Controller.Move(movedir.normalized * Time.deltaTime * m_MovementSpeed);
+            m_Controller.Move(movedir * Time.deltaTime * m_MovementSpeed);
+
+        if (m_Grounded && m_YMove < 0)
+        {
+            m_YMove = -0.1f;
+        }
+        if (GrabInput().y > 0)
+        {
+            Jump();
+        }
+        Gravity();
     }
     void HandleWeaponSwitching()
     {
+        m_OldSlotID = m_ActiveSlotID;
         m_ActiveSlotID = ((m_ActiveSlotID + (int)GrabScroll()) >= 0) ? m_ActiveSlotID + (int)GrabScroll() : m_ActiveSlotID;
     }
     void HandleActiveWeapon()
     {
-        foreach (GameObject weapon in m_HoldsteredWeapons)
+        if (m_OldSlotID != m_ActiveSlotID)
         {
-            weapon.GetComponent<Script_Weapon>().Disable();
+            foreach (GameObject weapon in m_HoldsteredWeapons)
+            {
+                weapon.GetComponent<Script_Weapon>().Disable();
+            }
+            if ((m_HoldsteredWeapons.Count - 1) >= m_ActiveSlotID)
+            {
+                m_HoldsteredWeapons[m_ActiveSlotID].GetComponent<Script_Weapon>().Enable();
+            }
         }
-        if ((m_HoldsteredWeapons.Count - 1) >= m_ActiveSlotID)
+    }
+
+    void RayCastIsGrounded()
+    {
+        RaycastHit raycastHit;
+        if (Physics.Raycast(transform.position, Vector3.down, out raycastHit, m_RaycastGroundLength, GroundedLayer))
         {
-            m_HoldsteredWeapons[m_ActiveSlotID].GetComponent<Script_Weapon>().Enable();
+            m_Grounded = true;
+        }
+        else
+        {
+            m_Grounded = false;
+
         }
     }
     void HandleInteract()
@@ -155,6 +188,23 @@ public class Script_Player : MonoBehaviour
                 }
             }
         }
+    }
+    void Jump()
+    {
+        if (m_Grounded)
+            m_YMove += Mathf.Sqrt(m_JumpHeight * -m_GravityValue);
+    }
+    void Gravity()
+    {
+        m_YMove += m_GravityValue * Time.deltaTime;
+        m_Controller.Move(Vector3.down * m_YMove * Time.deltaTime);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawRay(transform.position, Vector3.down * m_RaycastGroundLength);
+
     }
     #endregion
 }

@@ -56,14 +56,14 @@ public class Script_Chest : MonoBehaviour
     {
         m_Interacting = true;
         m_OpenValue = 0;
-        m_InventoryUI.gameObject.SetActive(true);
+       /* m_InventoryUI.gameObject.SetActive(true);*/
         m_HingeDesired = Quaternion.Euler(m_HingeDesired.x + 90, m_HingeDesired.y, m_HingeDesired.z);
     }
     void Close()
     {
         m_Interacting = true;
         m_OpenValue = 0;
-        m_InventoryUI.gameObject.SetActive(false);
+       /* m_InventoryUI.gameObject.SetActive(false);*/
         m_HingeDesired = new Quaternion(m_HingeStart.x, m_HingeStart.y, m_HingeStart.z, m_HingeStart.w);
     }
 }

@@ -128,12 +128,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 616af433bddd3f549afb70dd95e7a0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GamerTag: Human
-  m_TurnSpeed: 0.1
-  m_MovementSpeed: 10
-  m_WeaponHolster: {fileID: 2887943804194584786}
   m_FPSCam: {fileID: 0}
+  GamerTag: Human
+  m_TurnSpeed: 0
+  m_MovementSpeed: 10
+  m_GravityValue: -9.81
+  m_JumpHeight: 2
+  m_WeaponHolster: {fileID: 2887943804194584786}
+  m_InteractRange: 3
+  m_RaycastGroundLength: 1.05
   m_ThirdPersonCam: {fileID: 0}
+  GroundedLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  m_IsEnabled: 1
 --- !u!143 &17813371875344769
 CharacterController:
   m_ObjectHideFlags: 0
@@ -149,8 +157,8 @@ CharacterController:
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
+  m_SkinWidth: 0.001
+  m_MinMoveDistance: 0.00001
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1471461604719407308
 GameObject:
@@ -176,7 +184,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471461604719407308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 17813371875344770}

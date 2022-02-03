@@ -197,7 +197,7 @@ public class Script_Player : MonoBehaviour
     void Gravity()
     {
         m_YMove += m_GravityValue * Time.deltaTime;
-        m_Controller.Move(Vector3.down * m_YMove * Time.deltaTime);
+        m_Controller.Move(Vector3.up * m_YMove * Time.deltaTime);
     }
 
     private void OnDrawGizmos()
